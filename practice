@@ -1,0 +1,7 @@
+def perimeter(length: float, width: float):
+    """Calculate the perimeter of a rectangle"""
+    return (length * 2) + (width * 2)
+
+
+perimeter(length=10.0, width=8.0)
+print(perimeter(length=10.0, width=8.0))
