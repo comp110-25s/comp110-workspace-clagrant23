@@ -4,6 +4,7 @@ __author__ = "730567639"
 
 
 def invert(invert_dict: dict[str, str]) -> dict[str, str]:
+    """inverts the input dictionary key and value"""
     new_invert_dict = {}
     count_dict: dict[str, int] = {}
     for key in invert_dict:
@@ -22,6 +23,7 @@ def invert(invert_dict: dict[str, str]) -> dict[str, str]:
 
 
 def count(count_list: list[str]) -> dict[str, int]:
+    """returns a dictionary describing values in input list and number of occurences"""
     count_dict = {}
     i: int = 0
     while i < len(count_list):
@@ -35,6 +37,7 @@ def count(count_list: list[str]) -> dict[str, int]:
 
 
 def favorite_color(colors: dict[str, str]) -> str:
+    """returns the color that appears most frequently in dictionary"""
     new_color: list[str] = []
     for i in colors:
         new_color.append(colors[i])
@@ -49,6 +52,7 @@ def favorite_color(colors: dict[str, str]) -> str:
 
 
 def bin_len(strings_list: list[str]) -> dict[int, set[str]]:
+    """returns a dictionary with the key indicating length of strings and then lists the strings accordingly"""
     bins_dict = {}
     for string in strings_list:
         string_length = len(string)
